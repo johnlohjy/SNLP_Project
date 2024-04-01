@@ -1,4 +1,4 @@
-"# SNLP_Project" 
+# SNLP_Project 
 
 This branch of the github implements the augmentation component of our project.
 
