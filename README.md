@@ -20,3 +20,18 @@ pip install -r requirements.txt
 
 3) OPTIONAL: check your hardware if you want to use GPU acceleration - MPS, CUDA etc. Might need to do some tinkering for it work. If not, just use cpu which will work.
 
+---
+# Jupyter Notebooks
+
+The notebooks should use the environment you have set up (see above).
+
+There are two main note books for this branch:
+1. augment_data.ipynb 
+    - Augments data with sentiments in the data/train_2024.csv to augmented_data/train_2024.csv
+    - Augments data with sentiments in the data/dev_2024.csv to augmented_data/dev_2024.csv
+    - Augments data with sentiments in the data/test_2024.csv to augmented_data/test_2024.csv
+2. XLNET_Prediction_Experimentation.ipynb
+    - Does the prediction of the trained (without sentiments) model of the test data (augmented_data/test_2024.csv)
+    - Does the prediction of the trained (with sentiments) model of the test data (augmented_data/test_2024.csv)
+
+*Important*: The notebooks are currently set up to utilize MPS. For anybody that would like to replicate the process, do change the device to your compatible hardware e.g. CUDA or CPU.
